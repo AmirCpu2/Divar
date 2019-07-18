@@ -65,7 +65,7 @@ while page <= max_result :
     page += 1
 
     # requests divar.ir And return Page
-    r = session.get(url+'&'+str(page))
+    r = session.get(url+'& page='+str(page))
 
     # parse Tags
     tmp = parseTag(r,'Advertising')
